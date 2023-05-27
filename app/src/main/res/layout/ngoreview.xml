@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.NgoReview">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BF64C94B"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcometxt"
+            android:layout_width="261dp"
+            android:layout_height="132dp"
+            android:fontFamily="@font/bungee"
+            android:paddingLeft="20dp"
+            android:text="REVIEW \nUS HERE!"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/logoimg"
+            android:layout_width="186dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/logo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="409dp"
+        android:layout_height="622dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/rate_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/NGOIMAGE"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/nature" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviewrv"
+                android:layout_width="403dp"
+                android:layout_height="362dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NGOIMAGE"
+                app:layout_constraintVertical_bias="0.0"
+                tools:listitem="@layout/reviewrv" />
+
+            <TextView
+                android:id="@+id/NGONAME"
+                android:layout_width="182dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/bungee"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/NGOIMAGE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toEndOf="@+id/NGOIMAGE" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="197dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="44dp"
+                android:text="No Ratings yet! Be the first to review us!"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/NGONAME"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.596"
+                app:layout_constraintStart_toEndOf="@+id/NGOIMAGE" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rate_final"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="128dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="68dp"
+                android:layout_marginBottom="20dp"
+                android:isIndicator="false"
+                android:maxHeight="80dp"
+                android:minHeight="40dp"
+                android:numStars="5"
+                android:stepSize="0.1"
+                app:layout_constraintBottom_toTopOf="@+id/NGONAME"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/NGOIMAGE"
+                app:layout_constraintTop_toBottomOf="@+id/rate"
+                app:layout_constraintVertical_bias="0.0"
+                app:mrb_progressBackgroundTint="#29A83D"
+                app:mrb_progressTint="#29A83D"
+                app:mrb_secondaryProgressTint="#29A83D" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#BF64C94B"
+
+        app:layout_constraintBottom_toBottomOf="@+id/commentET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/commentET" />
+
+
+    <EditText
+        android:id="@+id/commentET"
+        android:layout_width="361dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="16dp"
+
+        android:ems="10"
+        android:hint="Send us a review!"
+        android:background="#BF64C94B"
+        android:textColorHint="@color/white"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:inputType="textMultiLine|textPersonName"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/commentPostBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/commentPostBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Send Review"
+        android:textAllCaps="false"
+        android:textColor="#29A83D"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/rate_star"
+        style="@style/Widget.MaterialRatingBar.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:isIndicator="false"
+        android:maxHeight="80dp"
+        android:minHeight="40dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/view13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:mrb_progressBackgroundTint="#29A83D"
+        app:mrb_progressTint="#29A83D"
+        app:mrb_secondaryProgressTint="#29A83D" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

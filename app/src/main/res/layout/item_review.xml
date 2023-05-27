@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_nama_pasien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    tools:text="Nama Pasien" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/total_star_rating"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+
+                    android:isIndicator="true"
+                    android:maxHeight="20dp"
+                    android:minHeight="20dp"
+                    android:numStars="5"
+                    android:stepSize="0.25"
+                    app:mrb_progressBackgroundTint="@color/colorPrimary"
+                    app:mrb_progressTint="@color/colorPrimary"
+                    app:mrb_secondaryProgressTint="@color/colorPrimary" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_tgl_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:text="12:23:34"/>
+
+            <TextView
+                android:id="@+id/tv_desc_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:text="Lambat!!! apa yang saya minta selalu saya dapatkan dan tidak pernah buruk pelayanannya, Good Job ya" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

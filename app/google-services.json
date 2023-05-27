@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "171226228062",
+    "project_id": "ngo-finder-26f74",
+    "storage_bucket": "ngo-finder-26f74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171226228062:android:f99fd29a2d4a731643dbcf",
+        "android_client_info": {
+          "package_name": "com.example.ngofinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171226228062-8eaq393nnmgli9c90o471ek4o2l04hub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqWVmVRedJtOoKt_zPCnmz-_eWfX97AUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171226228062-8eaq393nnmgli9c90o471ek4o2l04hub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introduction">
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="383dp"
+        android:layout_height="361dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:iss_auto_cycle="true"
+        app:iss_delay="0"
+        app:iss_error_image="@color/white"
+        app:iss_period="1000"
+        app:iss_placeholder="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="500dp"
+        android:layout_height="893dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/intro" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:lineSpacingExtra="7sp"
+        android:text="WELCOME"
+        android:textAlignment="center"
+        android:textColor="#29A83D"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_slider"
+        app:layout_constraintStart_toStartOf="@+id/image_slider"
+        app:layout_constraintTop_toBottomOf="@+id/image_slider" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="393dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="40dp"
+        android:lineSpacingExtra="7sp"
+        android:text="NGO Finder Application for the Volunteer to find local NGO to volunteer for a good cause."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <ImageButton
+        android:id="@+id/getstartedblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/getstartedblock"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="210dp"
+        android:layout_height="34dp"
+        android:lineSpacingExtra="7sp"
+        android:text="Get Started"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/getstartedblock"
+        app:layout_constraintEnd_toEndOf="@+id/getstartedblock"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/getstartedblock"
+        app:layout_constraintVertical_bias="0.653" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF64C94B"
+    tools:context=".Donation_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+  >
+
+        <ImageView
+            android:id="@+id/logoimg"
+            android:layout_width="284dp"
+            android:layout_height="184dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Amount:"
+        android:textColor="#4C2727"
+        android:textSize="30sp"
+        android:fontFamily="@font/bungee"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="  In Rs."
+        android:inputType="number"
+        android:keepScreenOn="false" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remark :"
+        android:textColor="#4C2727"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/bungee"/>
+
+    <EditText
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="  Remark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <Button
+        android:id="@+id/donateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonlight"
+        android:onClick="process"
+        android:text="DONATE"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="60dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
